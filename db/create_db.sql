@@ -32,6 +32,13 @@ CREATE TABLE professor_table (
         ON UPDATE cascade ON DELETE restrict
 );
 
+ALTER TABLE department_table
+ADD DepartmentHead INT(7) zerofill;
+
+ALTER TABLE department_table
+ADD FOREIGN KEY (DepartmentHead) REFERENCES professor_table (ProfessorID)
+ON UPDATE cascade ON DELETE restrict;
+
 CREATE TABLE major_table (
     MajorID INT NOT NULL CHECK (MajorID BETWEEN 0000000 AND 9999999),
     Name VARCHAR(40) NOT NULL,
