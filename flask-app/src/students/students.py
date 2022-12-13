@@ -4,10 +4,6 @@ from src import db
 
 students = Blueprint('students', __name__)
 
-@students.route('/test')
-def get_studentTest():
-    return ('<h1>Students route works</h1>')
-
 @students.route('/getStudentData', methods=['GET'])
 def get_studentInfo():
     cursor = db.get_db().cursor()
