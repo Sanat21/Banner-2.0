@@ -1,10 +1,8 @@
-# MySQL + Flask Boilerplate Project
+## Banner 2.0
+1. Banner 2.0 is a platform for students, professors, and advisors that combines course registration and transcript viewing.
+1. Link to the video is https://drive.google.com/file/d/1vDjbuMqai9PV2ad3UJRoFSSqupz_DG3g/view?usp=share_link
 
-This repo contains a boilerplate setup for spinning up 2 docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
-
-## How to setup and start the containers
+## How to start the program
 **Important** - you need Docker Desktop installed
 
 1. Clone this repository.  
@@ -13,13 +11,4 @@ This repo contains a boilerplate setup for spinning up 2 docker containers:
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
-
-## For setting up a Conda Web-Dev environment:
-
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
-
-
-
 
